@@ -1,0 +1,5 @@
+.idea
+cmake-build*
+*.pyc
+python/_modfact*
+python/modfact.py

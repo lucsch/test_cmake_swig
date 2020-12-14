@@ -1,0 +1,1 @@
+add_library(modfact src/modfact.cpp)
