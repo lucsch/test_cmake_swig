@@ -4,3 +4,6 @@ cmake-build*
 python/_modfact*
 python/modfact.py
 cppcore/bin
+build
+*.pyd
+cppcore/wheel/modfact/modfact.py

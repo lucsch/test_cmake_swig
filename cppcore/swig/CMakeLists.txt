@@ -15,3 +15,8 @@ SET_SOURCE_FILES_PROPERTIES(modfact.i PROPERTIES SWIG_FLAGS "-includeall")
 SWIG_ADD_MODULE(modfact python modfact.i "../modfact/src/modfact.cpp" "../modfact/src/modfact.h")
 SWIG_LINK_LIBRARIES(modfact ${PYTHON_LIBRARIES})
 MESSAGE("Python libs: ${PYTHON_LIBRARIES}")
+
+# install
+install(TARGETS modfact DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact" )
+install(FILES  "${CMAKE_BINARY_DIR}/swig/_modfact.pyd" DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact")
+install(FILES  "${CMAKE_BINARY_DIR}/swig/modfact.py" DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact")
