@@ -9,3 +9,9 @@ build
 *.so
 *.a
 cppcore/wheel/modfact/modfact.py
+*.egg-info
+wheel/build
+wheel/dist
+env
+venv
+*.whl

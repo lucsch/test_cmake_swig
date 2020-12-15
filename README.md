@@ -22,11 +22,14 @@ Small test for generating a python interface to a C library using SWIG.
 
         cmake ..
         cmake --build .
+
 - in *test_swig_cmake/cppcore/bin/swig* run:
 
         python3
         import modfact
         modfact.fact(3)
+
+
 
 ## For Windows
 
@@ -37,5 +40,15 @@ Small test for generating a python interface to a C library using SWIG.
 
          cmake .. -A x64
          cmake --build . --config Release`
+
+
+## Creating wheel
+
+- in *test_swig_cmake/cppcore/bin* run the `make install` step
+- in *test_swig_cmake/wheel* run the following commands
+
+        python3 setup.py bdist_wheel
+
+- a wheel should be built now.
 
 

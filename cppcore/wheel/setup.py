@@ -14,12 +14,17 @@ setup(
 
     # this package contains one module,
     # which resides in the subdirectory mymodule
-    # packages=['modfact'],
+    packages=['modfact'],
 
-    scripts=["modfact"],
+    #scripts=["modfact"],
+    #py_modules=['modfact'],
+    #data_files=[("_modfact.so")],
+
+    python_requires='>=3',
 
     # make sure the shared library is included
-    package_data={"modfact": ['_modfact.pyd']},
+    package_data={"modfact": ['_modfact.so']},
+    # package_data={"modfact": ['_modfact.pyd']},
     include_package_data=True,
 
     description="This is a short description",

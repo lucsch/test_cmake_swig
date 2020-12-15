@@ -18,7 +18,7 @@ MESSAGE("Python libs: ${PYTHON_LIBRARIES}")
 
 # install
 install(TARGETS modfact DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact" )
-install(FILES  "${CMAKE_BINARY_DIR}/swig/modfact.py" DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact")
+install(FILES  "${CMAKE_BINARY_DIR}/swig/modfact.py" DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact" RENAME "__init__.py")
 if(MSVC)
     install(FILES  "${CMAKE_BINARY_DIR}/swig/_modfact.pyd" DESTINATION "${PROJECT_SOURCE_DIR}/wheel/modfact")
 else(MSVC)
