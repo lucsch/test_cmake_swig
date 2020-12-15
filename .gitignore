@@ -6,4 +6,6 @@ python/modfact.py
 cppcore/bin
 build
 *.pyd
+*.so
+*.a
 cppcore/wheel/modfact/modfact.py
